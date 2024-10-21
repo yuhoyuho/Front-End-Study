@@ -1,0 +1,17 @@
+div.animation {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    animation-name: projectanimation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes projectanimation {
+    from {background-color: green;}
+    to {background-color: white;}
+}

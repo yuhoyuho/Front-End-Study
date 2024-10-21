@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red-box {
+            width : 10px;
+            height : 10px;
+            background-color: red;
+            transition : width, height, background-color, 5s;
+            /*
+            transition-property: width, height, background-color;
+            transition-duration: 5s, 5s, 5s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s;
+            */
+        }
+        .red-box:hover {
+            width : 110px;
+            height : 110px;
+            background-color: black;
+        }
+        .box {
+            width : 10px;
+            height : 10px;
+            background-color: blue;
+            transition-property : width, height, background-color;
+            transition-delay : 1s;
+            transition-duration : 3s;
+        }
+        .box:hover {
+            width :100px;
+            height : 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class = "red-box"></div><br><br><br><br><br><br><br>
+    <div class = "box"></div>
+</body>
+</html>

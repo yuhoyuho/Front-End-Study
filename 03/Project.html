@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + CSS Project</title>
+    <link rel = "stylesheet" href = "animation1.css">
+    <style>
+        .aaa {
+            display : block;
+            font-size: 48px;
+            color : #0f0;
+            text-align: center;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+        .naver {
+            display : block;
+            font-size: 48px;
+            color : #0f0;
+            text-align: center;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+        <img src = "../images/다운로드.png" style = "width : 48px; height : 48px">
+        <p class = "aaa" style = "color : #0f0; font-size: 48px; text-align: center; font-weight: bolder; display: inline;">
+            <strong>NAVER</strong>
+            </p>
+        <fieldset>
+            <legend><strong>블로그 글쓰기</strong></legend>
+            <p>
+                <label><strong>제목</strong>
+                    <input type = "text" maxlength="12" placeholder="제목을 입력해주세요.(12글자만)">
+                </label>
+            </p>
+            <label><strong>내용</strong>
+                <textarea type = "text" placeholder="내용을 입력해주세요."></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend><strong>게시물 위치</strong></legend>
+            <p>
+                <label>Platform</label>
+            </p>
+            <select name = "site" id = "site">
+                <optgroup label = "사이트">
+                    <option value = "Naver">Naver</option>
+                    <option value = "Daum">Daum</option>
+                    <option value = "Google">Google</option>
+                </optgroup>
+                <optgroup label = "기타">
+                    <option value = "Jb">Jb</option>
+                    <option value = "Jn">Jn</option>
+                    <option value = "etc">etc</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend><strong>E-mail</strong></legend>
+            <p>
+                <label>E-mail address</label>
+            </p>
+            <input type = "text" placeholder="ID">@
+            <select name = "adrress" id = "adrress">
+                <option value = "naver">naver.com</option>
+                <option value = "daum">daum.net</option>
+                <option value = "google">google.com</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend><strong>개인정보 이용 약관</strong></legend>
+            <input type = "checkbox" checked>
+            <label>동의함</label>
+            <input type = "checkbox">
+            <label>동의하지 않음</label>
+        </fieldset>
+        <button type = "submit">
+            <img src = ../images/다운로드.png width = 15px; heigth = 15px>
+            <a href = "https://www.naver.com" target="_blank" title = "네이버">
+                <strong>Upload</strong>
+            </a>
+        </button><br>
+        <a class = "aaa" href = "https://www.naver.com" target = "_blank" title = "NAVER">NAVER</a>
+        <div class = "animation"></div>
+        <button id = "start">start</button>
+        <button id = "paused">paused</button>
+        <script src = "script.js"></script>
+</body>
+</html>

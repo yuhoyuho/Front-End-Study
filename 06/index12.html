@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width : 100px;
+            height : 100px;
+            background-color: red;
+            animation-name : bgchange;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes bgchange {
+            from {background-color: red;}
+            33% {background-color: orange;}
+            66% {background-color: yellow;}
+            to {background-color: green;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <button id = "start">start</button>
+    <button id = "paused">paused</button>
+    <script>
+        const box = document.querySelector("div");
+        document.getElementById("start").addEventListener("click", function(){
+            box.style.animationPlayState = "running";
+        });
+        document.getElementById("paused").addEventListener("click", function(){
+            box.style.animationPlayState = "paused";
+        });
+    </script>
+</body>
+</html>

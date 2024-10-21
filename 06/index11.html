@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bar {
+            width : 20px;
+            height : 10px;
+            background-color: red;
+            transition-property: width;
+            transition-duration: 5s;
+        }
+        .bar:hover {
+            width : 150px;
+        }
+        .bar:nth-child(1) {
+            transition-timing-function: linear;
+        }
+        .bar:nth-child(2) {
+            transition-timing-function: ease;
+        }
+        .bar:nth-child(3) {
+            transition-timing-function: ease-in;
+        }
+        .bar:nth-child(4) {
+            transition-timing-function: ease-out;
+        }
+        .bar:nth-child(5) {
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class = "bar">linear</div><br>
+    <div class = "bar">ease</div><br>
+    <div class = "bar">ease-in</div><br>
+    <div class = "bar">ease-out</div><br>
+    <div class = "bar">ease-in-out</div><br>
+</body>
+</html>
